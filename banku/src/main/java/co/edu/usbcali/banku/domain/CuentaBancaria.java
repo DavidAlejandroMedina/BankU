@@ -14,7 +14,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "cuenta_bancaria")
+@Table(name = "cuentaBancaria")
 public class CuentaBancaria {
     @Id
     @Column(nullable = false, length = 20)
