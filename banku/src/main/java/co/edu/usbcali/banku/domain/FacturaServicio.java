@@ -14,8 +14,8 @@ import java.sql.Timestamp;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "factura")
-public class Factura {
+@Table(name = "facturaServicio")
+public class FacturaServicio {
     @Id
     @Column(nullable = false, length = 20)
     private String idFactura;
