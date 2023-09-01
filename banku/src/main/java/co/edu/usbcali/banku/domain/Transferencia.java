@@ -26,7 +26,7 @@ public class Transferencia {
     private Timestamp fechaTransfe;
 
     @Column(nullable = false, length = 15)
-    private String nomBanco;
+    private String nomBancoDestinatario;
 
     @Column(nullable = false, length = 20)
     private String idCuentaDestinatario;
