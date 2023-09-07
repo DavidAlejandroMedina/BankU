@@ -1,9 +1,17 @@
 package co.edu.usbcali.banku.dto;
 
-import co.edu.usbcali.banku.domain.Movimiento;
-import co.edu.usbcali.banku.domain.Usuario;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 
 public class CuentaBancariaDTO {
     private String idCuentaBancaria;
