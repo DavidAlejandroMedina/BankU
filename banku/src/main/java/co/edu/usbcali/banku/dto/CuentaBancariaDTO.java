@@ -20,5 +20,5 @@ public class CuentaBancariaDTO {
     private BigDecimal saldoColchon;
     private String idUsuario;
 
-    //private List<Movimiento>
+    //private List<Movimientos;
 }
