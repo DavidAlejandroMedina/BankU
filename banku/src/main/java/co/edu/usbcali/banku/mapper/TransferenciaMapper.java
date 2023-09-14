@@ -17,7 +17,7 @@ public class TransferenciaMapper {
                 .idDestinatario(transferenciaDTO.getIdDestinatario())
                 .montoEnviado(transferenciaDTO.getMontoEnviado())
                 .descripTransfe(transferenciaDTO.getDescripTransfe())
-                .cuentaBancaria(transferenciaDTO.getIdCuentaBancaria())
+                //.cuentaBancaria(transferenciaDTO.getIdCuentaBancaria())
                 .build();
     }
 
@@ -30,7 +30,7 @@ public class TransferenciaMapper {
                 .idDestinatario(transferencia.getIdDestinatario())
                 .montoEnviado(transferencia.getMontoEnviado())
                 .descripTransfe(transferencia.getDescripTransfe())
-                .idCuentaBancaria(transferencia.getCuentaBancaria())
+                //.idCuentaBancaria(transferencia.getCuentaBancaria())
                 .build();
     }
 
