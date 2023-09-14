@@ -3,10 +3,12 @@ package co.edu.usbcali.banku.controller;
 import co.edu.usbcali.banku.domain.Usuario;
 import co.edu.usbcali.banku.repository.UsuarioRepository;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/usuario")
@@ -23,7 +25,11 @@ public class UsuarioController {
 
     @GetMapping("/obtenerTodos")
     public List<Usuario> obtenerTodos(){
-        List<Usuario> usuarios = usuarioRepository.findAll();
-        return usuarios;
+        return usuarioRepository.findAll();
+    }
+
+    @GetMapping("/{id}")
+    public Optional<Usuario> obtenerByID(@PathVariable String id){
+        return usuarioRepository.findById(id);
     }
 }
